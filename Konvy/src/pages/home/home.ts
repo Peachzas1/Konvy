@@ -10,5 +10,8 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-
+  slideData =
+  [{ image: "../../assets/img/img1.jpeg" },
+  { image: "../../assets/img/img2.jpeg" },
+  { image: "../../assets/img/img3.jpeg" }]
 }
