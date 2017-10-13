@@ -1,3 +1,70 @@
 page-account {
 
+	.box{
+    	background: linear-gradient(#f3536d,#ff7b47);
+		width : 100%;
+		height : 30%;
+	}
+	.button.login{
+		display : inline-flex;
+		width : 45%;
+		margin : 140px 0px 20px 12.5px;
+		padding : 0px;
+		height : 16%;
+		font-size : 14px;
+		
+		
+	}
+	.button.register{
+		float : right;
+		display : inline-flex;
+		width : 45%;
+		margin : 140px 12.5px 20px 10px;
+		padding : 0px;
+		height : 16%;
+		font-size : 14px;
+		
+			
+	}
+    .layout{
+    	float : center;
+    	width : 10cm;
+    	height : 15%;
+    	margin : -8px -15px;
+    	padding : 0px;
+    	background-color : white;
+
+    }
+    .button.lbutton{
+    	
+		display : inline-flex;
+		margin : 5px 0px;
+		padding : 0px;
+		font-size : 14pt;
+
+		
+    }
+    .button.mbutton{
+		display : inline-flex;
+		margin : 5px 0px;
+		padding : 0px;
+		font-size : 14pt;
+		
+    }
+    .button.rbutton{
+    	
+		display : inline-flex;
+		margin : 5px 0px;
+		padding : 0px;
+		font-size : 14pt;
+		
+    }
+    #char{
+    	font-size :  10pt;
+    	margin-top : 5px;
+    }
+    .form{
+    background-color : #F2F2F2;
+    
+    }
 }
