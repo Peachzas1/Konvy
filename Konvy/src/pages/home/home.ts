@@ -11,7 +11,7 @@ export class HomePage {
 
   }
   slideData =
-  [{ image: "../../assets/img/img1.jpeg" },
-  { image: "../../assets/img/img2.jpeg" },
-  { image: "../../assets/img/img3.jpeg" }]
+  [{ image: "../../assets/img/img1.jpg" },
+  { image: "../../assets/img/img2.jpg" },
+  { image: "../../assets/img/img3.jpg" }]
 }
