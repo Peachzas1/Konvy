@@ -71,21 +71,19 @@ page-account {
     .layoutProfile{
     	float : center;
     	width : 10cm;
-    	height : 15%;
+    	height : 60%;
     	margin : 8px 0px 8px -15px;
     	padding : 0px;
     	background-color : white;
 
     }
     .profile{
-    	margin : 8px -15px 8px -15px;
+    	margin : 0px -15px 8px -15px;
     	width : 10cm;
-    	padding-top : -10px;
-    	height : 7.5%;
+    	border : lightgray solid 1px;
     }
     #subP{
-    	font-size : 12pt;
-    	margin: 5px 12px;
-    	text-align : center;
+    	border : lightgray solid 1px;
+    	margin-left : 10px;
     }
 }
