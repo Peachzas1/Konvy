@@ -13,6 +13,7 @@ page-account {
 		padding : 0px;
 		height : 16%;
 		font-size : 14px;
+		font-weight : 400;
 		
 		
 	}
@@ -24,6 +25,7 @@ page-account {
 		padding : 0px;
 		height : 16%;
 		font-size : 14px;
+		font-weight : 400;
 		
 			
 	}
@@ -42,6 +44,7 @@ page-account {
 		margin : 5px 15px 5px 8px;
 		padding : 0px;
 		font-size : 14pt;
+		font-weight : 900;
 
 		
     }
@@ -50,6 +53,7 @@ page-account {
 		margin : 5px 35px 5px 25px;
 		padding : 0px;
 		font-size : 14pt;
+		font-weight : 900;
 		
     }
     .button.rbutton{
@@ -62,7 +66,8 @@ page-account {
     }
     #char{
     	font-size :  10pt;
-    	margin-top : 5px;
+    	font-weight : 900;
+    	margin-top : 10px;
     }
     .form{
     background-color : #F2F2F2;
@@ -85,5 +90,34 @@ page-account {
     #subP{
     	border : lightgray solid 1px;
     	margin-left : 10px;
+    	font-weight : 600;
+    	color : #6E6E6E;
+    }
+    .layoutMember{
+    	float : center;
+    	width : 10cm;
+    	height : 48%;
+    	margin : 8px 0px 8px -15px;
+    	padding : 0px;
+    	background-color : white;
+
+    }
+    .layoutPassword{
+    	float : center;
+    	width : 10cm;
+    	height : 24%;
+    	margin : 8px 0px 8px -15px;
+    	padding : 0px;
+    	background-color : white;
+
+    }
+    .layoutSetting{
+    	float : center;
+    	width : 10cm;
+    	height : 12%;
+    	margin : 8px 0px 8px -15px;
+    	padding : 0px;
+    	background-color : white;
+
     }
 }
