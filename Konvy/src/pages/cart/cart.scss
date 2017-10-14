@@ -1,11 +1,13 @@
+
 page-cart {
+
 
 	#edit{
 		float : right;
 		margin-top : -4px;
 		margin-bottom: -8px;
 		margin-right : -5px;
-		font-size : 12pt;
+		font-size : 10pt;
 	}
 	#select{
 		height :0.65cm;
@@ -14,7 +16,6 @@ page-cart {
 		color :#FC0F71;
 		border : solid 1px #FC0F71;
 		font-size : 10pt;
-		font-weight : 700;
 		margin-top : -3px;
 		margin-right : 28px;
 		background-color : white;
@@ -25,7 +26,7 @@ page-cart {
 		width : 10cm;
 		height : 1.2cm;
 		padding-top : 8px;
-
+		margin-top : -3px;
 	}
 	#txt{
 		color : white;
@@ -34,24 +35,26 @@ page-cart {
 
 	}
 	.layoutPop{
-		margin-left : 8px;
+		margin-left : 2px;
 		border-left : 4px solid #FC0F71;
-		margin-top : -4px;
-		font-weight :600;
+		margin-top : 2px;
+		font-weight :400;
 		font-size :12pt;
 	}
 	#imgformat{
 		width :10cm;
 		margin-left : -10px;
 		margin-top : -10px;
+		margin-bottom : 0px;
+		border-bottom : 1px solid lightgray;
 	}
 	.layoutCard{
 		position : relative;
 		height : 7cm;
 		width : 4.4cm;
-		margin-left : 0px;
+		margin-left : -10px;
 		margin-top : -5px;
-		margin-right : -2px;
+		margin-right : -5px;
 
 	}
 	#content{
@@ -68,7 +71,7 @@ page-cart {
 		margin-left : 25px;		
 	}
 	#price{
-		font-weight : 600;
+		font-weight : 500;
 		font-size: 12pt;
 		color : black;
 	}
@@ -95,5 +98,29 @@ page-cart {
 		color : white;
 		background-color : #FC0F71;
 
+	}
+	.footer{
+		width : 10cm;
+		height : 1.2cm;
+		border : 0.1px solid lightgray;
+		padding-top: 5px;
+		padding-left : 5px;
+		background-color : white;
+	}
+	#footerAbove{
+		font-size : 9pt;
+		font-weight : 400;
+	}
+	#footerBelow{
+		display : flex;
+		font-size : 9pt;
+		font-weight : 400;
+		margin-top : 2px;
+		float : left;
+	}
+	.format{
+		width : 10cm;
+		padding-left : 6px;
+		padding-right : 2px;
 	}
 }

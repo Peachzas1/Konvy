@@ -5,17 +5,23 @@
     <ion-title>Cart</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content>
+<ion-footer class="footer">
+	<p no-margin id = "footerAbove">Number Of Units: &nbsp;<span style="color: #FC0F71">0</span></p>
+	<p  id = "footerBelow">Sub Total: &nbsp;<span style="color: #FC0F71">฿0.00</span></p> 
+	<button ion-button round color="light" item-end style="float: right; width: 2.8cm; height: 0.8cm; background-color:#FC0F71; color:white; margin:-13px 10px 0px 0px; font-size: 10pt; "> Confirm </button>
+</ion-footer>
+<ion-content style="background-color: lightgray;">
 	<img src="../assets/img/cartbanner.jpg">
 		<div class="layoutBG">
 			<span id="txt">Select Promotion Products</span>
 			<button ion-button round outline color="light" id="select">
-			Select
+			<span style="font-weight:400;">Select</span>
 			</button>
 		</div>
-	<ion-card id="imgformat">
+	<ion-card id="imgformat" >
 	<img src="../assets/img/cartempty.jpg">
 	</ion-card>
+	<ion-card class = "format" no-margin>
 		<div class="layoutPop">
 			&nbsp;&nbsp;Popular Today
 		</div>
@@ -89,7 +95,8 @@
 				<ion-card class = "layoutCard">
 					<img src="../assets/img/item5.jpg" id="itemformat">
 					<ion-card-content>
-						<p id="content">Donut Collagen 10000mg Plus (15g x 10 Sachets) #Mixed Berry Flavor คอลลาเจนชงดื่มรสมิกซ์เบอรรี่ </p>	<div class = "layoutContent">
+						<p id="content">Donut Collagen 10000mg Plus (15g x 10 Sachets) #Mixed Berry Flavor คอลลาเจนชงดื่มรสมิกซ์เบอรรี่ </p>	
+						<div class = "layoutContent">
 						<p id = "price">
 							฿159 &nbsp;<span id="oldP">฿299</span>
 						</p>
@@ -104,7 +111,8 @@
 				<ion-card class = "layoutCard">
 					<img src="../assets/img/item6.jpg" id="itemformat">
 					<ion-card-content>
-						<p id="content">แพ็คคู่ Sulwhasoo First Care Activating Serum ที่สุดของพรีเซรั่มอันดับหนึ่งช่วยเสริมประสิทธิภาพในการบำรุงพร้อมคืนสมดุลสู่ผิวหน้า</p>	<div class = "layoutContent">
+						<p id="content">แพ็คคู่ Sulwhasoo First Care Activating Serum ที่สุดของพรีเซรั่มอันดับหนึ่งช่วยเสริมประสิทธิภาพในการบำรุงพร้อมคืนสมดุลสู่ผิวหน้า</p>	
+						<div class = "layoutContent">
 						<p id = "price">
 							฿289 &nbsp;<span id="oldP">฿780</span>
 						</p>
@@ -117,4 +125,5 @@
 			</ion-col>
 		</ion-row>
 	</ion-grid>
+    </ion-card>
 </ion-content>
