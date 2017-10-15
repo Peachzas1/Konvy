@@ -13,6 +13,77 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+	<ion-searchbar [(ngModel)]="searchProduct"(ionInput)="filterItems($event)">
+	</ion-searchbar>
+  <ion-list-header>Acne & Treatment</ion-list-header>
+  <ion-grid>
+    <ion-row style="display: flex;">
 
+      <ion-col>
+        <img src="../../assets/img/product/acne-cleansing.PNG" id="itemformat">
+          <p id="content">Acne Cleansing</p> 
+      </ion-col>
+
+      <ion-col>
+        <img src="../../assets/img/product/acne-moisturizer.PNG" id="itemformat">
+          <p id="content">Acne Moisturizer</p>  
+      </ion-col>
+
+      <ion-col>
+        <img src="../../assets/img/product/acne-patch.PNG" id="itemformat">
+          <p id="content">Acne Patch</p>  
+      </ion-col>
+
+      <ion-col>
+        <img src="../../assets/img/product/acne-skin-care.PNG" id="itemformat">
+          <p id="content">Acne Skin Care</p>  
+      </ion-col>
+
+      <ion-list-header>Cleansing</ion-list-header>
+
+      <ion-col>
+        <img src="../../assets/img/product/soap.PNG" id="itemformat">
+          <p id="content">soap</p>  
+      </ion-col>
+
+      <ion-col>
+        <img src="../../assets/img/product/makeup-remover.PNG" id="itemformat">
+          <p id="content">Makeup remover</p>  
+      </ion-col>
+
+      <ion-col>
+        <img src="../../assets/img/product/makeup-remover-tissue.PNG" id="itemformat">
+          <p id="content">Makeup remover Tissue</p>  
+      </ion-col>
+
+      <ion-col>
+        <img src="../../assets/img/product/Cleansing water.PNG" id="itemformat">
+          <p id="content">Cleansing Water</p>  
+      </ion-col>
+
+      <ion-list-header>Cream</ion-list-header>
+      <ion-col>
+
+        <img src="../../assets/img/product/cream.PNG" id="itemformat">
+          <p id="content">Cream</p>  
+      </ion-col>
+
+      <ion-col>
+        <img src="../../assets/img/product/Day cream.PNG" id="itemformat">
+          <p id="content">Day Cream</p>  
+      </ion-col>
+
+      <ion-col>
+        <img src="../../assets/img/product/Night cream.PNG" id="itemformat">
+          <p id="content">Night Cream</p>  
+      </ion-col>
+
+      <ion-col>
+        <img src="../../assets/img/product/Multifunction cream.PNG" id="itemformat">
+          <p id="content">Multifunction cream</p>  
+      </ion-col>   
+
+    </ion-row>
+  </ion-grid>
 </ion-content>

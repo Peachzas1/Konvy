@@ -13,6 +13,21 @@
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+	<ion-searchbar></ion-searchbar>
+	<div class="slide">
+    <ion-slides autoplay="5000" loop="true" speed="3000" >
+      <ion-slide *ngFor="let slide of slideData">
+        <img src="{{slide.image}}" />
+      </ion-slide>
+    </ion-slides>
+  </div>
+  <ion-list-header>Official Flagship Store</ion-list-header>
+  <ion-grid>
+  	<ion-row>
+  		<ion-col *ngFor="let Logo of LogoData" col-3>
+  			<img src="{{Logo.image}}"/>
+  		</ion-col>
+  	</ion-row>
+  </ion-grid>
 </ion-content>
