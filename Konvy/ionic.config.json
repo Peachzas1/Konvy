@@ -1,6 +1,6 @@
 {
   "name": "Konvy",
-  "app_id": "",
+  "app_id": "540b569d",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}
