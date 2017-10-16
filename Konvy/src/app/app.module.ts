@@ -12,6 +12,7 @@ import { FlagshipPage } from './../pages/flagship/flagship';
 import { CategoryPage } from './../pages/category/category';
 import { TabsPage } from '../pages/tabs/tabs';
 
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ProductDataProvider } from '../providers/product-data/product-data';

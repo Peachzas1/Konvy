@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProductDataProvider } from '../../providers/product-data/product-data';
+
 /*
  * Generated class for the CategoryPage page.
  *
@@ -14,7 +15,7 @@ import { ProductDataProvider } from '../../providers/product-data/product-data';
   templateUrl: 'category.html',
 })
 export class CategoryPage {
-  
+    Page: string = "Category"; // default button
   	searchProduct: string = '';
   	/*productList = [{image:"../../assets/img/product/acne-cleansing.PNG",name:"Acne Cleansing",type:"Acne-control & Tretment"},
                   {image:"../../assets/img/product/acne-moisturizer.PNG",name:"Acne Moisturizer",type:"Acne-control & Tretment"},
@@ -34,10 +35,9 @@ export class CategoryPage {
                   ];*/
     productType = [{type:"Acne-control & Tretment"},
                     {type:"Cleansing"},{type:"cream"}]
-
   	constructor(public navCtrl: NavController, public navParams: NavParams,public dataService:ProductDataProvider) {
-  	
-	}  
+
+	  }  
 
 	ionViewDidLoad() {
  		//this.setFilteredItems();
@@ -46,6 +46,7 @@ export class CategoryPage {
     /*setFilteredItems() {
         this.productList = this.dataService.filterItems(this.searchProduct);
     }*/
+  
 }
 
 
