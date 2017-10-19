@@ -1,0 +1,15 @@
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+    color: #fc0f71;
+}
+.tabs-ios .tab-button:hover:not(.disable-hover), .tabs-ios .tab-button[aria-selected=true] {
+    color: #fc0f71;
+    font-weight : 900;
+}
+.tabs-ios .tabbar {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-top: 0.55px solid rgba(0, 0, 0, 0.3);
+    background: #ffffff;
+}

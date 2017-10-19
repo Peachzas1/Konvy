@@ -1,26 +1,40 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Konvy</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <div class="slide">
+<ion-content> 
+<div style = "float: center;">
+     <ion-card (swipe)="swipeEvent($event)" class = "divlayout">
+      <button ion-button smanll clear color = "dark" class="Belement">
+        {{this.Pages[this.count+0].p}}     
+     </button>
+     <button ion-button smanll clear color = "dark" class="Belement">
+        {{this.Pages[this.count+1].p}}     
+     </button>
+     <button ion-button smanll clear color = "dark" class="Belement">
+        {{this.Pages[this.count+2].p}}     
+     </button>
+    </ion-card>
+</div>
+  
+  <div>
     <ion-slides autoplay="5000" loop="true" speed="3000" >
       <ion-slide *ngFor="let slide of slideData">
         <img src="{{slide.image}}" />
       </ion-slide>
     </ion-slides>
   </div>
-  <div>
-    <img src="../../assets/img/img4.jpg">
-  </div>
-  <div>
-    <img src="../../assets/img/img5.jpg">
-  </div>
-  <div>
-    <img src="../../assets/img/img6.jpg">
-  </div>
+
+    <img src = "../../assets/img/img4.JPG"/>
+  
+  
+    <img src="../../assets/img/img5.jpg"/>
+
+  
+    <img src="../../assets/img/img6.jpg"/>
+  
   
 </ion-content>
 

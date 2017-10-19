@@ -7,26 +7,24 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>flagship</ion-title>
+    <ion-searchbar></ion-searchbar>
   </ion-navbar>
-
 </ion-header>
-
-
 <ion-content>
-	<ion-searchbar></ion-searchbar>
-	<div class="slide">
-    <ion-slides autoplay="5000" loop="true" speed="3000" >
+<ion-card class="sli">
+<ion-slides autoplay="5000" loop="true" speed="3000" >
       <ion-slide *ngFor="let slide of slideData">
-        <img src="{{slide.image}}" />
-      </ion-slide>
-    </ion-slides>
-  </div>
-  <ion-list-header>Official Flagship Store</ion-list-header>
+        <img src="{{slide.image}}" style="width: 10cm; height: 40%;"/>
+      </ion-slide>  
+</ion-slides>
+</ion-card>
+  <ion-label id="text">
+  Official Flagship Store
+  </ion-label>
   <ion-grid>
   	<ion-row>
   		<ion-col *ngFor="let Logo of LogoData" col-3>
-  			<img src="{{Logo.image}}"/>
+  			<img src="{{Logo.image}}" style="width: 5cm; height : 2cm; margin: 0px -10px -5px 3px;"/>
   		</ion-col>
   	</ion-row>
   </ion-grid>
