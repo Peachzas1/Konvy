@@ -1,8 +1,79 @@
-.category {
-width:30%;
-height:100%;
+
+#itemformat{
+width: 3cm;
+height: 2cm;
+margin-left: -10px;
 }
-item{
-width:30%;
-height:100%;
+
+#content{
+ margin :auto;
+ padding:auto;
+ overflow : hidden;
+}
+
+
+.segment-ios .segment-button.segment-activated {
+    color: #fff;
+    background-color: #484646;
+    opacity: 1;
+    transition: 100ms all linear;
+    border-color: #484646;
+
+
+}
+.segment-ios .segment-button {
+    flex: 1;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #484646;
+    font-size: 9pt;
+    line-height: 3rem;
+    color: #484646;
+    background-color: transparent;
+}
+#seg{
+    margin:32px 0px 0px 110px;
+    width: 40%;
+    
+}
+#layout{
+	height: 2.5cm;
+}
+#search{
+	margin-top: -35px;
+}
+.topic{
+    margin-left : 4px;
+	border-left : 4px solid #FC0F71;
+	margin-top : 15px;
+	margin-bottom : 20px;
+	font-weight :300;
+	font-size :12pt;
+	padding-left : 5px;
+}
+.cRight{
+	margin : -10px;
+	width : 74.5%;
+	float : right;
+
+	
+}
+.cLeft{
+	margin-left : -10px;
+	width : 2.5cm;
+	height : 1.2cm;
+	float : left;
+	display : table;
+	position : fixed;
+	margin-top: -12px;
+	margin-bottom: 0px;
+}
+.card{
+	
+	margin-bottom: 1px;	
+}
+#text{
+	font-size :9pt;
+	padding-left : 1px;
+	padding-top : 15px;
 }

@@ -4,30 +4,70 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header no-padding>
 
-  <ion-navbar>
-    <ion-title>Category</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content>
-	<ion-searchbar [(ngModel)]="searchProduct"(ionInput)="filterItems($event)">
-	</ion-searchbar>
-  <ion-segment [(ngModel)]="Page">
-    <ion-segment-button value="Category">
+  <ion-navbar id = "layout">
+    <ion-searchbar [(ngModel)]="searchProduct"(ionInput)="filterItems($event)" id="search">
+  </ion-searchbar>  
+  <ion-segment [(ngModel)]="Page" id="seg">
+    <ion-segment-button value="Category" color="dark" >
       Category
     </ion-segment-button>
-    <ion-segment-button value="Brand">
+    <ion-segment-button value="Brand" color="dark" >
       Brand
     </ion-segment-button>
   </ion-segment>
+  </ion-navbar>
+</ion-header>
 
-  <div [ngSwitch]="Page">
-  <ion-list *ngSwitchCase="'Category'">
-    <ion-list-header>Acne & Treatment</ion-list-header>
+
+<ion-content [ngSwitch]="Page">
+<div class="cLeft">
+<ion-card class="card">
+  <button ion-button small clear color="dark">
+    <div id="text">Skincare</div>
+  </button>
+</ion-card>
+<ion-card>
+  <button ion-button small clear color="dark">
+    <div id="text">Makeup</div>
+  </button>
+</ion-card>
+<ion-card>
+  <button ion-button small clear color="dark">
+    <div id="text">Body</div>
+  </button>
+</ion-card>
+<ion-card>
+  <button ion-button small clear color="dark">
+    <div id="text">Perfume</div>
+  </button>
+</ion-card>
+<ion-card>
+  <button ion-button small clear color="dark">
+    <div id="text">Supplements</div>
+  </button>
+</ion-card>
+<ion-card>
+  <button ion-button small clear color="dark">
+    <div id="text">Tools</div>
+  </button>
+</ion-card>
+<ion-card>
+  <button ion-button small clear color="dark">
+    <div id="text">For Men</div>
+  </button>
+</ion-card>
+<ion-card>
+  <button ion-button small clear color="dark">
+    <div id="text">Baby & Mom</div>
+  </button>
+</ion-card>
+</div>
+
+<ion-card class="cRight">
+  <ion-list *ngSwitchCase="'Category'" no-padding>
+    <div class="topic" style="margin-left:8px; ">Acne & Treatment</div>
       <ion-grid>
         <ion-row style="display: flex;">
           
@@ -50,12 +90,14 @@
             <img src="../../assets/img/product/acne-skin-care.PNG" id="itemformat">
               <p id="content">Acne Skin Care</p>  
           </ion-col>
+        </ion-row>
 
-        <ion-list-header>Cleansing</ion-list-header>
+        <div class="topic">Cleansing</div>
 
+      <ion-row style="display: flex;">
           <ion-col>
             <img src="../../assets/img/product/soap.PNG" id="itemformat">
-              <p id="content">soap</p>  
+              <p id="content">Skin Soap</p>  
           </ion-col>
 
           <ion-col>
@@ -72,8 +114,9 @@
             <img src="../../assets/img/product/Cleansing water.PNG" id="itemformat">
               <p id="content">Cleansing Water</p>  
           </ion-col>
-
-      <ion-list-header>Cream</ion-list-header>
+      </ion-row>
+      <div class="topic">Cream</div>
+      <ion-row>
         <ion-col>
 
           <img src="../../assets/img/product/cream.PNG" id="itemformat">
@@ -94,12 +137,12 @@
             <img src="../../assets/img/product/Multifunction cream.PNG" id="itemformat">
             <p id="content">Multifunction cream</p>  
           </ion-col>   
-
       </ion-row>
     </ion-grid>
   </ion-list>
+</ion-card>
   <ion-list *ngSwitchCase="'Brand'">
-    <ion-grid>
+    <ion-grid no-padding>
         <ion-row style="display: flex;">
         <ion-list-header>#</ion-list-header> 
           <ion-col col-3>
@@ -146,6 +189,4 @@
         </ion-row>
       </ion-grid>
   </ion-list>
-</div>
-  
 </ion-content>
